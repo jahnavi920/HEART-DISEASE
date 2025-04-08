@@ -13,6 +13,6 @@ g=st.number_input("Enter glucose")
 if st.button("predict"):
     prediction=clf.predict([[a,c,tc,sbp,dbp,bmi,hr,g]])
     if prediction==0:
-        st.txt("No chance for heart disease")
+        st.text("No chance for heart disease")
     else:
-        st.txt("You might have a heart disease")
+        st.text("You might have a heart disease")
